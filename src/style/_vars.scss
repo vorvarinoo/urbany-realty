@@ -1,0 +1,27 @@
+:root {
+  --white-color: #FFFFFF;
+  --black-color: #1e1e1e;
+  --dark-blue-color: #2c3f60;
+  --light-blue-color: #1d2e4f;
+
+
+  --gray-70-color: #505565;
+  --gray-50-color: #BDC1C2;
+  --gray-10-color: #F3F5F6;
+  --red-color: #BD0300;
+  --red-40-color: #F56C69;
+  --error-color: var(--red-color);
+
+  // other vars
+  --min-site-width: 375px;
+  --max-site-width: 1600px;
+}
+
+$sm: 540px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1600px;
+$fhd: 1920px;
+$main-font: "Mont";
+$title-font: "Soyuz Grotesk";

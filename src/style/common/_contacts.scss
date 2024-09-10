@@ -1,0 +1,21 @@
+.contacts {
+  display: flex;
+  align-items: center;
+
+  &__icon-phone {
+    margin-right: 14px;
+  }
+
+  &__phone {
+    font-weight: 600;
+    font-size: 20px;
+    color: #1e1e1e;
+  }
+
+  &__time-work {
+    font-weight: 600;
+    font-size: 12px;
+    text-align: right;
+    color: rgba(30, 30, 30, 0.5);
+  }
+}
