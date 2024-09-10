@@ -5,6 +5,16 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+
+  &--primary {
+    background-color: var(--dark-blue-color);
+    padding: 24px 56px;
+    border-radius: 300px;
+
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--white-color);
+  }
 }
 
 .btn-icon {

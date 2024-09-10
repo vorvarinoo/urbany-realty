@@ -1,0 +1,14 @@
+.title {
+  @include indent-reset;
+
+  font-family: $title-font, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+
+  font-size: 58px;
+  color: var(--white-color);
+
+  @include media-min($lg) {
+    font-size: 70px;
+  }
+}

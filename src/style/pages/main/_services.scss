@@ -1,0 +1,28 @@
+.services {
+  padding: 48px 0;
+  background: linear-gradient(180deg, #2c3f60 0%, #1b2c4d 100%);
+
+  @include media-min($lg) {
+  }
+
+  & .title {
+    margin-bottom: 32px;
+
+    @include media-min($lg) {
+      margin-bottom: 54px;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+
+    display: grid;
+    row-gap: 70px;
+
+    @include media-min($lg) {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
+      row-gap: 40px;
+    }
+  }
+}

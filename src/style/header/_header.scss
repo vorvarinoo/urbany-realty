@@ -4,13 +4,21 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 20px;
+    padding: 20px 0;
     min-height: 50px;
   }
 
-  &__nav {
-    @include list-reset;
+  &__main-nav {
+    font-size: 12px;
+    font-size: 600;
+    color: var(--black-color);
 
+    & a {
+      color: inherit;
+    }
+  }
+
+  &__left {
     display: flex;
   }
 }

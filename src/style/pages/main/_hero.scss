@@ -1,0 +1,54 @@
+.hero {
+  --background: rgba(0, 0, 0, 0.5);
+
+  background-image: url(../img/img-bg-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  border-image: fill 0 linear-gradient(var(--background), var(--background));
+
+  &__cont {
+    padding: 160px 0 180px;
+    max-width: 630px;
+
+    @include media-min($lg) {
+      padding-bottom: 150px;
+      min-height: 634px;
+      margin-left: 56px;
+    }
+  }
+
+  &__subtitle {
+    @include indent-reset;
+
+    font-size: 16px;
+    color: var(--white-color);
+    font-weight: 400;
+
+    @include media-min($lg) {
+      font-size: 20px;
+    }
+  }
+
+  & .title {
+    margin-bottom: 5px;
+
+    @include media-min($lg) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__descr {
+    @include indent-reset;
+
+    font-size: 14px;
+    color: var(--white-color);
+    margin-bottom: 24px;
+    margin-right: 30px;
+
+    @include media-min($lg) {
+      font-size: 30px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 .visually-hidden:not(:focus):not(:active),
-input[type='radio'].visually-hidden,
-input[type='checkbox'].visually-hidden,
-input[type='file'].visually-hidden {
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="file"].visually-hidden {
   @include visually-hidden;
 }
 
@@ -30,7 +30,7 @@ input[type='file'].visually-hidden {
 .is-lock-scroll {
   overflow: hidden;
 
-  @include media-min ($xl) {
+  @include media-min($xl) {
     overflow: visible;
   }
 }
@@ -45,5 +45,13 @@ input[type='file'].visually-hidden {
   background-color: #f4f6fb;
   border-radius: 300px;
   padding: 5px;
+}
 
+.container {
+  --max-width: 1160px;
+  --padding-side: 20px;
+
+  width: min(var(--max-width), 100% - (var(--padding-side) * 2));
+  margin: 0 auto;
+  box-sizing: border-box;
 }
