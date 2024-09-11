@@ -11,4 +11,11 @@
   @include media-min($lg) {
     font-size: 70px;
   }
+
+  &--blue {
+    background: linear-gradient(90deg, #1b2c4d 0%, #7184aa 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

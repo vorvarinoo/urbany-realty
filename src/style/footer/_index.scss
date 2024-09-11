@@ -1,0 +1,148 @@
+.footer {
+
+  & .title {
+    display: none;
+    margin-bottom: 48px;
+
+    @include media-min($lg) {
+      display: block;
+    }
+  }
+
+  &__map {
+    border-radius: 10px;
+  }
+
+
+}
+
+.footer-middle {
+  padding: 24px;
+
+  display: grid;
+  row-gap: 20px;
+
+  @include media-min($lg) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  &__list {
+    @include list-reset;
+
+    display: grid;
+
+    @include media-min($lg) {
+      grid-template-columns: repeat(2, max-content);
+      grid-auto-rows: min-content;
+      row-gap: 15px;
+      justify-content: space-between;
+      max-width: 483px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    display: grid;
+    align-self: flex-start;
+  }
+
+  &__name {
+    font-size: 12px;
+    color: rgba(30, 30, 30, 0.5);
+  }
+
+  &__value {
+    font-size: 12px;
+    color: #1e1e1e;
+  }
+
+  &__form {
+    max-width: 340px;
+    width: 100%;
+
+    & form {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+    }
+
+    & input {
+      height: 100%;
+      margin-right: 10px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+
+
+    & > div {
+      display: grid;
+      flex-shrink: 0;
+      max-width: 120px;
+    }
+
+    & .txt-sm {
+      margin-bottom: 4px;
+    }
+
+    & button {
+      justify-content: flex-start;
+      position: relative;
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--dark-blue-color);
+      padding-bottom: 3px;
+
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 65%;
+        height: 1px;
+        background-color: var(--dark-blue-color);
+      }
+    }
+
+    & a {
+      margin-left: 16px;
+
+      & svg {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  padding: 24px 0;
+  background-color: #fbfbfb;
+
+  &__cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__links {
+    font-size: 12px;
+    color: rgba(30, 30, 30, 0.5);
+    margin-right: 60px;
+
+    & a {
+      color: #4e89e1;
+      border-bottom: 1px solid #4e89e1;
+    }
+  }
+
+  &__logo {
+    flex-shrink: 0;
+  }
+}

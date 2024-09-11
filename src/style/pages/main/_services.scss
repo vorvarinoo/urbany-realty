@@ -2,8 +2,7 @@
   padding: 48px 0;
   background: linear-gradient(180deg, #2c3f60 0%, #1b2c4d 100%);
 
-  @include media-min($lg) {
-  }
+  @include media-min($lg) {}
 
   & .title {
     margin-bottom: 32px;
@@ -19,9 +18,14 @@
     display: grid;
     row-gap: 70px;
 
+    @include media-min($md) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 24px;
+    }
+
+
     @include media-min($lg) {
       grid-template-columns: repeat(3, 1fr);
-      column-gap: 24px;
       row-gap: 40px;
     }
   }

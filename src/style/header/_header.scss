@@ -1,4 +1,8 @@
 .header {
+  &--border-bottom {
+    border-bottom: 1px solid #f2f2f2;
+  }
+
   &__cont {
     display: flex;
     align-items: center;
@@ -8,17 +12,8 @@
     min-height: 50px;
   }
 
-  &__main-nav {
-    font-size: 12px;
-    font-size: 600;
-    color: var(--black-color);
-
-    & a {
-      color: inherit;
-    }
-  }
-
-  &__left {
+  &__right {
     display: flex;
   }
+
 }

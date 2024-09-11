@@ -8,6 +8,7 @@ import {
 
 const initSliders = () => {
   initSlider( '.main-first', sliderConfig );
+  initSlider( '.partners__slider .swiper', sliderConfig.partners );
 };
 
 export {

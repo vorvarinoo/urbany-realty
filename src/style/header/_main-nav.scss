@@ -1,0 +1,17 @@
+.main-nav {
+  font-size: 12px;
+  font-size: 600;
+  color: rgba(30, 30, 30, 0.5);
+
+
+
+
+  & a {
+    color: inherit;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: var(--black-color);
+    }
+  }
+}

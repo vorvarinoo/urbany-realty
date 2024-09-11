@@ -1,0 +1,23 @@
+.about {
+  padding: 54px 0;
+
+  & .title {
+    margin-bottom: 27px;
+  }
+
+  &__descr {
+    display: grid;
+    row-gap: 24px;
+
+    & p {
+      @include indent-reset;
+
+      line-height: 1.6;
+      color: rgba(30, 30, 30, 0.7);
+    }
+
+    & span {
+      color: var(--black-color);
+    }
+  }
+}

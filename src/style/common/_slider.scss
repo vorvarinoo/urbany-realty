@@ -14,23 +14,43 @@
 }
 
 .slider-control {
-  color: var(--white-color);
-  background-color: var(--black-color);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+
+  user-select: none;
+
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: var(--white-color);
+  box-shadow: -4px 19px 31px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
   pointer-events: auto;
+  cursor: pointer;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
 
   &.swiper-button-lock {
     display: none;
   }
 
-  & svg {
-    width: 12px;
-    height: 12px;
+  @include media-min ($lg) {
+    display: flex;
   }
 
   @include media-min ($xl) {
     transition: background-color 0.2s ease-in-out;
   }
+}
+
+.button-prev {
+  left: -35px;
+}
+
+.button-next {
+  right: -35px;
 }
