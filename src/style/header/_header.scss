@@ -1,4 +1,11 @@
 .header {
+  &--fixed {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    background-color: var(--white-color);
+  }
+
   &--border-bottom {
     border-bottom: 1px solid #f2f2f2;
   }
@@ -14,6 +21,7 @@
 
   &__right {
     display: flex;
+    align-items: center;
   }
 
 }

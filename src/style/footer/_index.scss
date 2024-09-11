@@ -13,11 +13,20 @@
     border-radius: 10px;
   }
 
+  & .header__cont {
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @include media-min($lg) {
+      flex-wrap: nowrap;
+    }
+  }
+
 
 }
 
 .footer-middle {
-  padding: 24px;
+  padding: 24px 0;
 
   display: grid;
   row-gap: 20px;
@@ -33,16 +42,20 @@
     @include list-reset;
 
     display: grid;
+    row-gap: 15px;
 
     @include media-min($lg) {
-      grid-template-columns: repeat(2, max-content);
       grid-auto-rows: min-content;
-      row-gap: 15px;
       justify-content: space-between;
       max-width: 483px;
-      width: 100%;
       flex-wrap: wrap;
+      column-gap: 80px;
     }
+
+    @include media-min($xl) {
+      grid-template-columns: repeat(2, max-content);
+    }
+
   }
 
   &__item {
@@ -84,7 +97,10 @@
     & > div {
       display: grid;
       flex-shrink: 0;
-      max-width: 120px;
+
+      @include media-min($lg) {
+        max-width: 120px;
+      }
     }
 
     & .txt-sm {
@@ -127,14 +143,24 @@
 
   &__cont {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+
+    @include media-min($lg) {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__links {
+    @include indent-reset;
+
     font-size: 12px;
     color: rgba(30, 30, 30, 0.5);
-    margin-right: 60px;
+
+    @include media-min($lg) {
+      margin-right: 60px;
+    }
 
     & a {
       color: #4e89e1;
@@ -144,5 +170,10 @@
 
   &__logo {
     flex-shrink: 0;
+    margin-bottom: 14px;
+
+    @include media-min($lg) {
+      margin-bottom: 0;
+    }
   }
 }

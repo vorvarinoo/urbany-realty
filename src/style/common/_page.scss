@@ -1,0 +1,43 @@
+.page {
+  padding: 54px 0 16px;
+
+  @include media-min($lg) {
+    padding: 24px 32px;
+  }
+
+  & .title {
+    @include media-min($lg) {
+      margin-right: 30px;
+    }
+  }
+
+  &__top {
+    display: grid;
+    row-gap: 24px;
+
+    @include media-min($lg) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__descr {
+    @include indent-reset;
+
+    max-width: 424px;
+
+    @include media-min($lg) {
+      margin-right: 40px;
+    }
+
+    @include media-min($xl) {
+      margin-right: 80px;
+    }
+  }
+
+  & .btn {
+    flex-shrink: 0;
+    max-width: 340px;
+  }
+}

@@ -73,6 +73,7 @@ input[type="file"].visually-hidden {
   }
 }
 
+
 .d-lg-none {
   @include media-min($lg) {
     display: none !important;
@@ -82,5 +83,15 @@ input[type="file"].visually-hidden {
 .d-sm-none {
   @include media-max($lg) {
     display: none !important;
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-xl-block {
+  @include media-min($xl) {
+    display: block !important;
   }
 }

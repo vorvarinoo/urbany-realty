@@ -1,25 +1,27 @@
-<header class="site__header header">
+<header class="site__header header header--fixed">
   <div class="container">
     <div class="header__cont">
-      <div>
+      <div class="logo">
         <a href="/">
-          <img src="/img/logo.png"
+          <img src="/img/logo.svg"
                alt="Logo">
         </a>
       </div>
 
-      <div class="main-nav">
+      <div class="main-nav d-sm-none">
         <a href="">Главная</a>&emsp;/&emsp;<a href="">Наши услуги</a>&emsp;/&emsp;<a href="">Контакты</a>
       </div>
 
       <div class="header__right">
-        <div class="language-switcher">
-          <button class="language-switcher__btn active">RU</button>
-          <button class="language-switcher__btn">EN</button>
-          <button class="language-switcher__btn">AM</button>
+        <div class="language-switcher d-sm-none">
+          <div class="language-switcher__cont">
+            <button class="language-switcher__btn active">RU</button>
+            <button class="language-switcher__btn">EN</button>
+            <button class="language-switcher__btn">AM</button>
+          </div>
         </div>
 
-        <div class="contacts">
+        <div class="contacts d-sm-none">
           <a class="contacts__icon-phone is-background"
              href="tel:+">
             <svg width="24"
@@ -29,14 +31,38 @@
             </svg>
           </a>
           <div>
-            <a class="contacts__phone"
+            <a class="contacts__phone d-sm-none"
                href="tel:+">8 (800) 700 77 77</a>
             <div class="contacts__time-work">c 8:00 до 22:00</div>
           </div>
         </div>
+
+        <div class="language-select d-lg-none">
+          <span class="language-select__current">RU</span>
+          <span class="language-select__arrow">&#9662;</span>
+          <select class="language-select__dropdown">
+            <option value="ru"
+                    selected>RU</option>
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+          </select>
+
+        </div>
+
+        <button class="just-burger d-lg-none"
+                aria-label="Меню"
+                id="just-burger"
+                aria-hidden="true">
+          <span class="just-burger__line just-burger__line--top"></span>
+          <span class="just-burger__line just-burger__line--middle"></span>
+          <span class="just-burger__line just-burger__line--bottom"></span>
+        </button>
       </div>
+
 
 
     </div>
   </div>
+
+  @include('modal.html')
 </header>

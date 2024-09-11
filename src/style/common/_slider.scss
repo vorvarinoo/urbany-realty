@@ -19,8 +19,7 @@
 
   position: absolute;
   z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 47%;
 
   background-color: var(--white-color);
   box-shadow: -4px 19px 31px 0 rgba(0, 0, 0, 0.15);
@@ -45,12 +44,4 @@
   @include media-min ($xl) {
     transition: background-color 0.2s ease-in-out;
   }
-}
-
-.button-prev {
-  left: -35px;
-}
-
-.button-next {
-  right: -35px;
 }

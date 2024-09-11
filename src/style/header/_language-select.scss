@@ -1,0 +1,34 @@
+.language-select {
+  margin-right: 20px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f5f8fc;
+  border-radius: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e3551;
+  cursor: pointer;
+  user-select: none;
+}
+
+.language-select__current {
+  margin-right: 8px;
+}
+
+.language-select__arrow {
+  font-size: 12px;
+  margin-left: auto;
+}
+
+.language-select__dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}

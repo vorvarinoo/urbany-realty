@@ -94,6 +94,19 @@ const sendData = ( evt, url, isOk, isError ) => {
     } );
 };
 
+const breakpointChecker = ( trueCb, falseCb, width = '992' ) => {
+  const breakpoint = window.matchMedia( `(min-width:${width}px)` );
+  const cb = () => {
+    if ( breakpoint.matches ) {
+      trueCb();
+    } else {
+      falseCb();
+    }
+  };
+  cb();
+  breakpoint.addEventListener( 'change', cb );
+};
+
 export {
   iosVhFix,
   isEscKey,
@@ -101,5 +114,6 @@ export {
   unlockScroll,
   initSlider,
   initModal,
-  sendData
+  sendData,
+  breakpointChecker
 };

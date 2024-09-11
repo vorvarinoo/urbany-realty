@@ -1,0 +1,82 @@
+.header-modal {
+  pointer-events: none;
+
+  &[aria-hidden="false"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    & .header-modal__content {
+      @include anim(fade-left, 0.3s);
+
+      display: block;
+    }
+  }
+
+  &__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    color: var(--black);
+    background-color: var(--white-color);
+    overflow: auto;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 30px;
+    background: linear-gradient(90deg, #1e1e1e 0%, #848484 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    padding-top: 10px;
+    margin-bottom: 100px;
+  }
+
+  &__nav {
+    margin-bottom: 100px;
+
+    & ul {
+      @include list-reset;
+
+      display: grid;
+      row-gap: 8px;
+    }
+
+    & a {
+      font-weight: 400;
+      font-size: 30px;
+      background: linear-gradient(90deg, #1e1e1e 0%, #848484 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: .8;
+
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  & .contacts {
+    margin-bottom: 40px;
+  }
+
+  @include media-min($xl) {
+    display: none;
+  }
+}

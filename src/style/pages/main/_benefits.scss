@@ -9,6 +9,7 @@
     @include list-reset;
 
     display: grid;
+    row-gap: 48px;
 
     @include media-min($md) {
       grid-template-columns: repeat(3, 1fr);

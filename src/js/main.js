@@ -1,22 +1,28 @@
 import {
   initSiteSettings
-} from './modules/settings.js';
+} from "./modules/settings.js";
+import {
+  initHeaderMenu
+} from "./modules/header.js";
 import {
   initModals
-} from './modules/modal.js';
+} from "./modules/modal.js";
 import {
   initSliders
-} from './modules/slider.js';
+} from "./modules/slider.js";
 import {
   validateForms
-} from './modules/validate.js';
+} from "./modules/validate.js";
 
-document.addEventListener( 'DOMContentLoaded', () => {
+import "./modules/select.js";
+
+document.addEventListener( "DOMContentLoaded", () => {
   initSiteSettings();
 
-  window.addEventListener( 'load', () => {
+  window.addEventListener( "load", () => {
     validateForms();
     initModals();
     initSliders();
+    initHeaderMenu();
   } );
 } );
