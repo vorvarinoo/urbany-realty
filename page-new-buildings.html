@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Новостройки</title>
+</head>
+
+<body class="indent-reset site">
+  <div inert="" id="site-top"></div>
+  <div class="site__container">
+    <header class="site__header header header--fixed">
+      <div class="container">
+        <div class="header__cont">
+          <div class="logo">
+            <a href="/">
+              <img src="/img/logo.svg" alt="Logo">
+            </a>
+          </div>
+
+          <div class="main-nav d-sm-none">
+            <a href="">Главная</a>&emsp;/&emsp;<a href="">Наши услуги</a>&emsp;/&emsp;<a href="">Контакты</a>
+          </div>
+
+          <div class="header__right">
+            <div class="language-switcher d-sm-none">
+              <div class="language-switcher__cont">
+                <button class="language-switcher__btn active">RU</button>
+                <button class="language-switcher__btn">EN</button>
+                <button class="language-switcher__btn">AM</button>
+              </div>
+            </div>
+
+            <div class="contacts d-sm-none">
+              <a class="contacts__icon-phone is-background" href="tel:+">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
+              </a>
+              <div>
+                <a class="contacts__phone d-sm-none" href="tel:+">8 (800) 700 77 77</a>
+                <div class="contacts__time-work">c 8:00 до 22:00</div>
+              </div>
+            </div>
+
+            <div class="select d-lg-none">
+              <span class="select__current">RU</span>
+              <span class="select__arrow">&#9662;</span>
+              <select class="select__dropdown">
+                <option value="ru" selected>RU</option>
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+              </select>
+            </div>
+
+            <button class="just-burger d-lg-none" aria-label="Меню" id="just-burger" aria-hidden="true">
+              <span class="just-burger__line just-burger__line--top"></span>
+              <span class="just-burger__line just-burger__line--middle"></span>
+              <span class="just-burger__line just-burger__line--bottom"></span>
+            </button>
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <div class="container">
+            <div class="header-modal__title">Навигация</div>
+
+            <nav class="header-modal__nav">
+              <ul>
+                <li><a href="">Новостройки</a></li>
+                <li><a href="">Вторичное жилье</a></li>
+                <li><a href="">Аренда квартиры</a></li>
+              </ul>
+            </nav>
+
+            <div class="contacts">
+              <a class="contacts__icon-phone is-background" href="tel:+">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
+              </a>
+              <div>
+                <a class="contacts__phone" href="tel:+">8 (800) 700 77 77</a>
+                <div class="contacts__time-work">c 8:00 до 22:00</div>
+              </div>
+            </div>
+
+
+            <div class="language-switcher">
+              <div class="language-switcher__title">Язык</div>
+              <div class="language-switcher__cont">
+                <button class="language-switcher__btn active">RU</button>
+                <button class="language-switcher__btn">EN</button>
+                <button class="language-switcher__btn">AM</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="site__content site__content--offset">
+
+
+      <section class="page">
+        <div class="container">
+          <div class="page__top">
+            <h1 class="title title--sm-blue">новостройки</h1>
+            <p class="page__descr">Мы подберем вам квартиру в кратчайшие сроки по вашему запросу, учтем пожелание по расположению, ремонту, оснащенности</p>
+            <button class="btn btn--primary">Получить консультацию</button>
+          </div>
+        </div>
+      </section>
+
+      <form class="filter">
+        <div class="container">
+          <div class="filter__cont">
+
+            <div class="filter__item d-sm-none">
+
+              <div class="filter__title">
+                Вид недвижимости
+              </div>
+
+              <ul class="filter__list">
+
+                <li>
+                  <label class="filter__checkbox-btn">
+                    <input type="checkbox">
+                    <span>жилое</span>
+                  </label>
+
+                </li>
+
+                <li>
+                  <label class="filter__checkbox-btn">
+                    <input type="checkbox">
+                    <span>коммерция</span>
+                  </label>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="filter__item d-sm-none">
+
+              <div class="filter__title">
+                Квадратура
+              </div>
+
+              <ul class="filter__list">
+
+                <li>
+                  <label class="filter__checkbox-btn">
+                    <input type="number" placeholder="от">
+                  </label>
+
+                </li>
+
+                <li>
+                  <label class="filter__checkbox-btn">
+                    <input type="number" placeholder="до">
+                  </label>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="filter__grid d-lg-none">
+
+              <div class="filter__item">
+                <div class="filter__title">
+                  Вид недвижимости
+                </div>
+                <ul class="filter__list">
+
+                  <li>
+                    <div class="select select--filter">
+                      <span class="select__current">жилое</span>
+                      <span class="select__arrow">&#9662;</span>
+                      <select class="select__dropdown">
+                        <option value="жилое" selected>жилое</option>
+                        <option value="коммерция">коммерция</option>
+                      </select>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="filter__item d-lg-none">
+                <div class="filter__title">
+                  Балкон
+                </div>
+                <ul class="filter__list">
+
+                  <li>
+                    <div class="select select--filter">
+                      <span class="select__current">Да</span>
+                      <span class="select__arrow">&#9662;</span>
+                      <select class="select__dropdown">
+                        <option value="Да" selected>Да</option>
+                        <option value="Нет">Нет</option>
+                      </select>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="filter__item">
+              <div class="filter__title">
+                Количество комнат
+              </div>
+              <ul class="filter__list">
+                <li>
+                  <label class="filter__checkbox-btn filter__checkbox-btn--size">
+                    <input type="checkbox">
+                    <span>1</span>
+                  </label>
+
+                </li>
+                <li>
+                  <label class="filter__checkbox-btn filter__checkbox-btn--size">
+                    <input type="checkbox">
+                    <span>2</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="filter__checkbox-btn filter__checkbox-btn--size">
+                    <input type="checkbox">
+                    <span>3</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="filter__checkbox-btn filter__checkbox-btn--size">
+                    <input type="checkbox">
+                    <span>4</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="filter__grid">
+
+              <div class="filter__item">
+                <div class="filter__title">
+                  Этаж
+                </div>
+                <ul class="filter__list">
+                  <li>
+                    <div class="select select--filter">
+                      <span class="select__current">7</span>
+                      <span class="select__arrow">&#9662;</span>
+                      <select class="select__dropdown">
+                        <option value="7" selected>7</option>
+                        <option value="8">8</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filter__item">
+                <div class="filter__title">
+                  Год сдачи объекта
+                </div>
+                <ul class="filter__list">
+                  <li>
+                    <div class="select select--filter">
+                      <span class="select__current">2024</span>
+                      <span class="select__arrow">&#9662;</span>
+                      <select class="select__dropdown">
+                        <option value="2024" selected>2024</option>
+                        <option value="2023">2023</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="filter__item d-sm-none">
+
+              <div class="filter__title">
+                Балкон
+              </div>
+
+              <ul class="filter__list">
+
+                <li>
+                  <label class="filter__checkbox-btn">
+                    <input name="uniqueGroup" type="radio">
+                    <span>да</span>
+                  </label>
+
+                </li>
+
+                <li>
+                  <label class="filter__checkbox-btn">
+                    <input name="uniqueGroup" type="radio">
+                    <span>нет</span>
+                  </label>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="filter__item d-lg-none">
+
+              <div class="filter__title">
+                Квадратура
+              </div>
+
+              <ul class="filter__list">
+
+                <li>
+                  <label class="filter__checkbox-btn">
+                    <input type="number" placeholder="от">
+                  </label>
+
+                </li>
+
+                <li>
+                  <label class="filter__checkbox-btn">
+                    <input type="number" placeholder="до">
+                  </label>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="filter__item d-sm-none">
+
+              <div class="filter__title">
+                Парковка
+              </div>
+
+              <ul class="filter__list">
+
+                <li>
+                  <label class="filter__checkbox-btn">
+                    <input type="checkbox">
+                    <span>подземная</span>
+                  </label>
+
+                </li>
+
+                <li>
+                  <label class="filter__checkbox-btn">
+                    <input type="checkbox">
+                    <span>наземная</span>
+                  </label>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="filter__grid d-lg-none">
+
+              <div class="filter__item d-lg-none">
+                <div class="filter__title">
+                  Парковка
+                </div>
+                <ul class="filter__list">
+
+                  <li>
+                    <div class="select select--filter">
+                      <span class="select__current">подземная</span>
+                      <span class="select__arrow">&#9662;</span>
+                      <select class="select__dropdown">
+                        <option value="подземная" selected>подземная</option>
+                        <option value="наземная">наземная</option>
+                      </select>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="filter__item">
+                <div class="filter__title">
+                  Балкон
+                </div>
+                <ul class="filter__list">
+
+                  <li>
+                    <div class="select select--filter">
+                      <span class="select__current">да</span>
+                      <span class="select__arrow">&#9662;</span>
+                      <select class="select__dropdown">
+                        <option value="да" selected>да</option>
+                        <option value="нет">нет</option>
+                      </select>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </form>
+
+      <section class="products">
+        <div class="container">
+
+          <ul class="products__list">
+            <li>
+              <article class="product">
+
+                <div class="swiper product__slider">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                </div>
+
+                <div class="product__info">
+                  <div class="product__row">
+                    <h3 class="product__title">New World</h3>
+                    <span class="product__price">2 000р/сут</span>
+                  </div>
+                  <div class="product__address">ул. Академика 17</div>
+                  <p class="product__descr">
+                    Какое то интересное описание квартиры, что есть, сколько до метро и так далее
+                  </p>
+                  <div class="product__btn">
+                    <button class="btn btn--secondary" type="submit">
+                      <svg width="12" height="24" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-slider-next"></use>
+                      </svg>
+                    </button>
+                    Получить консультацию
+                  </div>
+                </div>
+
+                <ul class="product__list">
+                  <li class="product__item product__item--diskount">
+                    Скидки в офисе
+                  </li>
+                  <li class="product__item">
+                    Готовая квартира
+                  </li>
+                </ul>
+              </article>
+            </li>
+
+            <li>
+              <article class="product">
+
+                <div class="swiper product__slider">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-2.png" alt="">
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                </div>
+
+                <div class="product__info">
+                  <div class="product__row">
+                    <h3 class="product__title">New World</h3>
+                    <span class="product__price">2 000р/сут</span>
+                  </div>
+                  <div class="product__address">ул. Академика 17</div>
+                  <p class="product__descr">
+                    Какое то интересное описание квартиры, что есть, сколько до метро и так далее
+                  </p>
+                  <div class="product__btn">
+                    <button class="btn btn--secondary" type="submit">
+                      <svg width="12" height="24" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-slider-next"></use>
+                      </svg>
+                    </button>
+                    Получить консультацию
+                  </div>
+                </div>
+
+                <ul class="product__list">
+                  <li class="product__item product__item--diskount">
+                    Скидки в офисе
+                  </li>
+                </ul>
+              </article>
+            </li>
+
+            <li>
+              <article class="product">
+
+                <div class="swiper product__slider">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                </div>
+
+                <div class="product__info">
+                  <div class="product__row">
+                    <h3 class="product__title">New World</h3>
+                    <span class="product__price">2 000р/сут</span>
+                  </div>
+                  <div class="product__address">ул. Академика 17</div>
+                  <p class="product__descr">
+                    Какое то интересное описание квартиры, что есть, сколько до метро и так далее
+                  </p>
+                  <div class="product__btn">
+                    <button class="btn btn--secondary" type="submit">
+                      <svg width="12" height="24" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-slider-next"></use>
+                      </svg>
+                    </button>
+                    Получить консультацию
+                  </div>
+                </div>
+
+                <ul class="product__list">
+                  <li class="product__item">
+                    Готовая квартира
+                  </li>
+                </ul>
+              </article>
+            </li>
+
+            <li>
+              <article class="product">
+
+                <div class="swiper product__slider">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                </div>
+
+                <div class="product__info">
+                  <div class="product__row">
+                    <h3 class="product__title">New World</h3>
+                    <span class="product__price">2 000р/сут</span>
+                  </div>
+                  <div class="product__address">ул. Академика 17</div>
+                  <p class="product__descr">
+                    Какое то интересное описание квартиры, что есть, сколько до метро и так далее
+                  </p>
+                  <div class="product__btn">
+                    <button class="btn btn--secondary" type="submit">
+                      <svg width="12" height="24" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-slider-next"></use>
+                      </svg>
+                    </button>
+                    Получить консультацию
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="product">
+
+                <div class="swiper product__slider">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                </div>
+
+                <div class="product__info">
+                  <div class="product__row">
+                    <h3 class="product__title">New World</h3>
+                    <span class="product__price">2 000р/сут</span>
+                  </div>
+                  <div class="product__address">ул. Академика 17</div>
+                  <p class="product__descr">
+                    Какое то интересное описание квартиры, что есть, сколько до метро и так далее
+                  </p>
+                  <div class="product__btn">
+                    <button class="btn btn--secondary" type="submit">
+                      <svg width="12" height="24" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-slider-next"></use>
+                      </svg>
+                    </button>
+                    Получить консультацию
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="product">
+
+                <div class="swiper product__slider">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                </div>
+
+                <div class="product__info">
+                  <div class="product__row">
+                    <h3 class="product__title">New World</h3>
+                    <span class="product__price">2 000р/сут</span>
+                  </div>
+                  <div class="product__address">ул. Академика 17</div>
+                  <p class="product__descr">
+                    Какое то интересное описание квартиры, что есть, сколько до метро и так далее
+                  </p>
+                  <div class="product__btn">
+                    <button class="btn btn--secondary" type="submit">
+                      <svg width="12" height="24" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-slider-next"></use>
+                      </svg>
+                    </button>
+                    Получить консультацию
+                  </div>
+                </div>
+              </article>
+            </li>
+
+          </ul>
+
+          <button class="btn btn--primary d-sm-none">Показать больше</button>
+        </div>
+      </section>
+
+
+    </main>
+    <footer class="site__footer footer">
+      <div class="container">
+        <div class="footer__map">
+          <img src="/img/img-map.png" alt="">
+
+          <div class="header header--border-bottoms">
+            <div class="header__cont">
+              <div class="logo">
+                <a href="/">
+                  <img src="/img/logo.svg" alt="Logo">
+                </a>
+              </div>
+
+              <div class="main-nav d-none d-xl-block">
+                <a href="">Главная</a>&emsp;/&emsp;<a href="">Наши услуги</a>&emsp;/&emsp;<a href="">Контакты</a>
+              </div>
+
+              <div class="header__right">
+                <div class="social d-sm-none">
+                  <span>Мы социально- активны:</span>
+                  <ul class="social__list">
+                    <li>
+                      <a class="is-background" href="">
+                        <svg width="19" height="19" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="is-background" href="">
+                        <svg width="24" height="24" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="is-background" href="">
+                        <svg width="24" height="24" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="is-background" href="">
+                        <svg width="24" height="24" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="contacts">
+                  <a class="contacts__icon-phone is-background" href="tel:+">
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </a>
+                  <div>
+                    <a class="contacts__phone" href="tel:+">8 (800) 700 77 77</a>
+                    <div class="contacts__time-work">c 8:00 до 22:00</div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="footer-middle">
+            <ul class="footer-middle__list">
+              <li class="footer-middle__item">
+                <span class="footer-middle__name">Реквизиты:</span>
+                <span class="footer-middle__value">ИНН: 5032309922, ОГРН: 1195081051846</span>
+              </li>
+              <li class="footer-middle__item">
+                <span class="footer-middle__name">Адрес:</span>
+                <span class="footer-middle__value">г. Москва, ул. Нагорная, д 19</span>
+              </li>
+            </ul>
+
+            <div class="footer-middle__form">
+              <form id="email-form" data-validate novalidate="novalidate">
+                <input class="form-input" type="email" name="Почтовый адрес" placeholder="E-mail" required data-validate="email">
+                <button class="btn btn--secondary" type="submit">
+                  <svg width="8" height="8" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-small-aroow-v2"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+
+            <div class="social d-lg-none">
+              <span>Мы социально- активны:</span>
+              <ul class="social__list">
+                <li>
+                  <a class="is-background" href="">
+                    <svg width="19" height="19" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="is-background" href="">
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="is-background" href="">
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="is-background" href="">
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-middle__contact">
+              <div>
+                <span class="txt-sm txt-sm--gradient">Есть вопросы или предложения?</span>
+                <button class="btn">Напишите нам</button>
+              </div>
+              <a href="#" class="btn btn--secondary d-sm-none">
+                <svg width="8" height="8" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-small-aroow-v2"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom__cont">
+            <div class="footer-bottom__logo">
+              <a href="">
+                <img src="/img/logo-footer.png" alt="">
+              </a>
+            </div>
+            <p class="footer-bottom__links">
+              Отправляя сообщение в мессенджеры, форму заявки, я подтверждаю, что даю конкретное, предметное, информированное, сознательное и однозначное <a href="">Согласие на обработку моих персональных данных</a>, и полностью ознакомился и согласен с <a href="">Политикой обработки персональных данных</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="scroll-top" id="scroll-top">
+      <a class="scroll-top__link" href="#site-top" aria-label="Наверх страницы">
+        <svg width="10" height="10" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#arrow-up"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="hystmodal" id="send-ok-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal">
+
+            <div class="modal__title">Спасибо за заявку!</div>
+            <div class="modal__text">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
+            <button class="btn" data-hystclose>Хорошо</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="form-request-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal">
+
+            <div class="modal__title title">оставьте заявку</div>
+            <div class="modal__text">Оставьте заявку и наш менеджер свяжется с вами в течение 10 минут</div>
+            <form id="form-request" action="">
+              <input class="form-input" type="name">
+              <input class="form-input" type="rel">
+              <button class="btn btn--primary" type="submit">Получить консультацию</button>
+            </form>
+
+            <p class="modal__info">
+              Нажимая на кнопку вы соглашаетесь с <a href="#" target="_blank" rel="nofollow noreferer noopener">политикой конфиденциальности</a> и даете <a href="#" target="_blank" rel="nofollow noreferer noopener">согласие на обработку персональных данных</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor-bundle.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
