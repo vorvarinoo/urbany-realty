@@ -3,244 +3,219 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="style/vendor-bundle.css">
-  <link rel="stylesheet" href="style/main.css">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible"
+      content="ie=edge">
+<link rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png">
+<link rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png">
+<link rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon.png">
+<link rel="manifest"
+      href="site.webmanifest">
+<link rel="preload"
+      href="fonts/opensans-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin>
+<link rel="stylesheet"
+      href="style/vendor-bundle.css">
+<link rel="stylesheet"
+      href="style/main.css">
   <title>Страница</title>
 </head>
 
 <body class="indent-reset site">
-  <div inert="" id="site-top"></div>
+  <div inert=""
+       id="site-top"></div>
   <div class="site__container">
     <header class="site__header header header--fixed">
-      <div class="container">
+  <div class="container">
+    <div class="header__cont">
+      <div class="logo">
+        <a href="/page-main.html">
+          <img src="./img/logo.svg"
+               alt="Logo">
+        </a>
+      </div>
+
+      <div class="main-nav d-sm-none">
+        <a href="/page-main.html">Главная</a>&emsp;/&emsp;<a href="/page-main.html#services">Наши услуги</a>&emsp;/&emsp;<a href="#contacts">Контакты</a>
+      </div>
+
+      <div class="header__right">
+        <div class="language-switcher d-sm-none">
+          <div class="language-switcher__cont">
+            <button class="language-switcher__btn active">RU</button>
+            <button class="language-switcher__btn">EN</button>
+            <button class="language-switcher__btn">AM</button>
+          </div>
+        </div>
+
+        <div class="contacts d-sm-none">
+          <a class="contacts__icon-phone is-background"
+             href="tel:+">
+            <svg width="24"
+                 height="24"
+                 aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+          </a>
+          <div>
+            <a class="contacts__phone d-sm-none"
+               href="tel:+">8 (800) 700 77 77</a>
+            <div class="contacts__time-work">c 8:00 до 22:00</div>
+          </div>
+        </div>
+
+        <div class="select d-lg-none">
+          <span class="select__current">RU</span>
+          <span class="select__arrow">&#9662;</span>
+          <select class="select__dropdown">
+            <option value="ru"
+                    selected>RU</option>
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+          </select>
+        </div>
+
+        <button class="just-burger d-lg-none"
+                aria-label="Меню"
+                id="just-burger"
+                aria-hidden="true">
+          <span class="just-burger__line just-burger__line--top"></span>
+          <span class="just-burger__line just-burger__line--middle"></span>
+          <span class="just-burger__line just-burger__line--bottom"></span>
+        </button>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="header-modal"
+     aria-hidden="true">
+  <div class="header-modal__content">
+    <div class="container">
+      <div class="header-modal__title">Навигация</div>
+
+      <nav class="header-modal__nav">
+        <ul>
+          <li><a href="/page-new-buildings.html">Новостройки</a></li>
+          <li><a href="/page-secondary-housing.html">Вторичное жилье</a></li>
+          <li><a href="/page-apartment-rent.html">Аренда квартиры</a></li>
+        </ul>
+      </nav>
+
+      <div class="contacts">
+        <a class="contacts__icon-phone is-background"
+           href="tel:+">
+          <svg width="24"
+               height="24"
+               aria-hidden="true">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+        </a>
+        <div>
+          <a class="contacts__phone"
+             href="tel:+">8 (800) 700 77 77</a>
+          <div class="contacts__time-work">c 8:00 до 22:00</div>
+        </div>
+      </div>
+
+
+      <div class="language-switcher">
+        <div class="language-switcher__title">Язык</div>
+        <div class="language-switcher__cont">
+          <button class="language-switcher__btn active">RU</button>
+          <button class="language-switcher__btn">EN</button>
+          <button class="language-switcher__btn">AM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+    <main class="site__content site__content--offset">
+      
+      <div class="container"
+     typeof="BreadcrumbList"
+     vocab="https://schema.org/">
+  <a href="page-main.html">Главная</a>&ensp;&#47;&ensp;<span>Страница</span>
+</div>
+      
+
+
+			</main>
+			<footer class="site__footer footer"
+        id="contacts">
+  <div class="container">
+    <h2 class="title title--blue">контакты</h2>
+    <div class="footer__map">
+      <img src="./img/img-map.png"
+           alt="">
+
+      <div class="header header--border-bottoms">
         <div class="header__cont">
           <div class="logo">
-            <a href="/">
-              <img src="/img/logo.svg" alt="Logo">
+            <a href="/page-main.html">
+              <img src="/img/logo.svg"
+                   alt="Logo">
             </a>
           </div>
 
-          <div class="main-nav d-sm-none">
-            <a href="">Главная</a>&emsp;/&emsp;<a href="">Наши услуги</a>&emsp;/&emsp;<a href="">Контакты</a>
+          <div class="main-nav d-none d-xl-block">
+            <a href="/page-main.html">Главная</a>&emsp;/&emsp;<a href="/page-main.html#services">Наши услуги</a>&emsp;/&emsp;<a href="#contacts">Контакты</a>
           </div>
 
           <div class="header__right">
-            <div class="language-switcher d-sm-none">
-              <div class="language-switcher__cont">
-                <button class="language-switcher__btn active">RU</button>
-                <button class="language-switcher__btn">EN</button>
-                <button class="language-switcher__btn">AM</button>
-              </div>
-            </div>
-
-            <div class="contacts d-sm-none">
-              <a class="contacts__icon-phone is-background" href="tel:+">
-                <svg width="24" height="24" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-              </a>
-              <div>
-                <a class="contacts__phone d-sm-none" href="tel:+">8 (800) 700 77 77</a>
-                <div class="contacts__time-work">c 8:00 до 22:00</div>
-              </div>
-            </div>
-
-            <div class="select d-lg-none">
-              <span class="select__current">RU</span>
-              <span class="select__arrow">&#9662;</span>
-              <select class="select__dropdown">
-                <option value="ru" selected>RU</option>
-                <option value="en">EN</option>
-                <option value="fr">FR</option>
-              </select>
-            </div>
-
-            <button class="just-burger d-lg-none" aria-label="Меню" id="just-burger" aria-hidden="true">
-              <span class="just-burger__line just-burger__line--top"></span>
-              <span class="just-burger__line just-burger__line--middle"></span>
-              <span class="just-burger__line just-burger__line--bottom"></span>
-            </button>
-          </div>
-
-
-
-        </div>
-      </div>
-
-      <div class="header-modal" aria-hidden="true">
-        <div class="header-modal__content">
-          <div class="container">
-            <div class="header-modal__title">Навигация</div>
-
-            <nav class="header-modal__nav">
-              <ul>
-                <li><a href="">Новостройки</a></li>
-                <li><a href="">Вторичное жилье</a></li>
-                <li><a href="">Аренда квартиры</a></li>
-              </ul>
-            </nav>
-
-            <div class="contacts">
-              <a class="contacts__icon-phone is-background" href="tel:+">
-                <svg width="24" height="24" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-              </a>
-              <div>
-                <a class="contacts__phone" href="tel:+">8 (800) 700 77 77</a>
-                <div class="contacts__time-work">c 8:00 до 22:00</div>
-              </div>
-            </div>
-
-
-            <div class="language-switcher">
-              <div class="language-switcher__title">Язык</div>
-              <div class="language-switcher__cont">
-                <button class="language-switcher__btn active">RU</button>
-                <button class="language-switcher__btn">EN</button>
-                <button class="language-switcher__btn">AM</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="site__content site__content--offset">
-
-      <div class="container" typeof="BreadcrumbList" vocab="https://schema.org/">
-        <a href="page-main.html">Главная</a>&ensp;&#47;&ensp;<span>Страница</span>
-      </div>
-
-
-
-    </main>
-    <footer class="site__footer footer">
-      <div class="container">
-        <h2 class="title title--blue">контакты</h2>
-        <div class="footer__map">
-          <img src="/img/img-map.png" alt="">
-
-          <div class="header header--border-bottoms">
-            <div class="header__cont">
-              <div class="logo">
-                <a href="/">
-                  <img src="/img/logo.svg" alt="Logo">
-                </a>
-              </div>
-
-              <div class="main-nav d-none d-xl-block">
-                <a href="">Главная</a>&emsp;/&emsp;<a href="">Наши услуги</a>&emsp;/&emsp;<a href="">Контакты</a>
-              </div>
-
-              <div class="header__right">
-                <div class="social d-sm-none">
-                  <span>Мы социально- активны:</span>
-                  <ul class="social__list">
-                    <li>
-                      <a class="is-background" href="">
-                        <svg width="19" height="19" aria-hidden="true">
-                          <use xlink:href="img/sprite.svg#icon-telegram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="is-background" href="">
-                        <svg width="24" height="24" aria-hidden="true">
-                          <use xlink:href="img/sprite.svg#icon-vk"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="is-background" href="">
-                        <svg width="24" height="24" aria-hidden="true">
-                          <use xlink:href="img/sprite.svg#icon-youtube"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="is-background" href="">
-                        <svg width="24" height="24" aria-hidden="true">
-                          <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="contacts">
-                  <a class="contacts__icon-phone is-background" href="tel:+">
-                    <svg width="24" height="24" aria-hidden="true">
-                      <use xlink:href="img/sprite.svg#icon-phone"></use>
-                    </svg>
-                  </a>
-                  <div>
-                    <a class="contacts__phone" href="tel:+">8 (800) 700 77 77</a>
-                    <div class="contacts__time-work">c 8:00 до 22:00</div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="footer-middle">
-            <ul class="footer-middle__list">
-              <li class="footer-middle__item">
-                <span class="footer-middle__name">Реквизиты:</span>
-                <span class="footer-middle__value">ИНН: 5032309922, ОГРН: 1195081051846</span>
-              </li>
-              <li class="footer-middle__item">
-                <span class="footer-middle__name">Адрес:</span>
-                <span class="footer-middle__value">г. Москва, ул. Нагорная, д 19</span>
-              </li>
-            </ul>
-
-            <div class="footer-middle__form">
-              <form id="email-form" data-validate novalidate="novalidate">
-                <input class="form-input" type="email" name="Почтовый адрес" placeholder="E-mail" required data-validate="email">
-                <button class="btn btn--secondary" type="submit">
-                  <svg width="8" height="8" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#icon-small-aroow-v2"></use>
-                  </svg>
-                </button>
-              </form>
-            </div>
-
-            <div class="social d-lg-none">
+            <div class="social d-sm-none">
               <span>Мы социально- активны:</span>
               <ul class="social__list">
                 <li>
-                  <a class="is-background" href="">
-                    <svg width="19" height="19" aria-hidden="true">
+                  <a class="is-background"
+                     href="">
+                    <svg width="19"
+                         height="19"
+                         aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-telegram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="is-background" href="">
-                    <svg width="24" height="24" aria-hidden="true">
+                  <a class="is-background"
+                     href="">
+                    <svg width="24"
+                         height="24"
+                         aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-vk"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="is-background" href="">
-                    <svg width="24" height="24" aria-hidden="true">
+                  <a class="is-background"
+                     href="">
+                    <svg width="24"
+                         height="24"
+                         aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-youtube"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="is-background" href="">
-                    <svg width="24" height="24" aria-hidden="true">
+                  <a class="is-background"
+                     href="">
+                    <svg width="24"
+                         height="24"
+                         aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
                     </svg>
                   </a>
@@ -248,78 +223,214 @@
               </ul>
             </div>
 
-            <div class="footer-middle__contact">
-              <div>
-                <span class="txt-sm txt-sm--gradient">Есть вопросы или предложения?</span>
-                <button class="btn">Напишите нам</button>
-              </div>
-              <a href="#" class="btn btn--secondary d-sm-none">
-                <svg width="8" height="8" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-small-aroow-v2"></use>
+            <div class="contacts">
+              <a class="contacts__icon-phone is-background"
+                 href="tel:+">
+                <svg width="24"
+                     height="24"
+                     aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
               </a>
+              <div>
+                <a class="contacts__phone"
+                   href="tel:+">8 (800) 700 77 77</a>
+                <div class="contacts__time-work">c 8:00 до 22:00</div>
+              </div>
             </div>
           </div>
+
+
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="footer-bottom__cont">
-            <div class="footer-bottom__logo">
-              <a href="">
-                <img src="/img/logo-footer.png" alt="">
+      <div class="footer-middle">
+        <ul class="footer-middle__list">
+          <li class="footer-middle__item">
+            <span class="footer-middle__name">Реквизиты:</span>
+            <span class="footer-middle__value">ИНН: 5032309922, ОГРН: 1195081051846</span>
+          </li>
+          <li class="footer-middle__item">
+            <span class="footer-middle__name">Адрес:</span>
+            <span class="footer-middle__value">г. Москва, ул. Нагорная, д 19</span>
+          </li>
+        </ul>
+
+        <div class="footer-middle__form">
+          <form id="email-form"
+                data-validate
+                novalidate="novalidate">
+            <input class="form-input"
+                   type="email"
+                   name="Почтовый адрес"
+                   placeholder="E-mail"
+                   required
+                   data-validate="email">
+            <button class="btn btn--secondary"
+                    type="submit">
+              <svg width="8"
+                   height="8"
+                   aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-small-aroow-v2"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="social d-lg-none">
+          <span>Мы социально- активны:</span>
+          <ul class="social__list">
+            <li>
+              <a class="is-background"
+                 href="">
+                <svg width="19"
+                     height="19"
+                     aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                </svg>
               </a>
-            </div>
-            <p class="footer-bottom__links">
-              Отправляя сообщение в мессенджеры, форму заявки, я подтверждаю, что даю конкретное, предметное, информированное, сознательное и однозначное <a href="">Согласие на обработку моих персональных данных</a>, и полностью ознакомился и согласен с <a href="">Политикой обработки персональных данных</a>
-            </p>
-          </div>
+            </li>
+            <li>
+              <a class="is-background"
+                 href="">
+                <svg width="24"
+                     height="24"
+                     aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="is-background"
+                 href="">
+                <svg width="24"
+                     height="24"
+                     aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="is-background"
+                 href="">
+                <svg width="24"
+                     height="24"
+                     aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </footer>
-    <div class="scroll-top" id="scroll-top">
-      <a class="scroll-top__link" href="#site-top" aria-label="Наверх страницы">
-        <svg width="10" height="10" aria-hidden="true">
-          <use xlink:href="img/sprite.svg#arrow-up"></use>
-        </svg>
-      </a>
-    </div>
-    <div class="hystmodal" id="send-ok-modal" aria-hidden="true">
-      <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <div class="modal">
 
-            <div class="modal__title">Спасибо за заявку!</div>
-            <div class="modal__text">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
-            <button class="btn" data-hystclose>Хорошо</button>
+        <div class="footer-middle__contact">
+          <div>
+            <span class="txt-sm txt-sm--gradient">Есть вопросы или предложения?</span>
+            <button class="btn">Напишите нам</button>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="hystmodal" id="form-request-modal" aria-hidden="true">
-      <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <div class="modal">
-
-            <div class="modal__title title">оставьте заявку</div>
-            <div class="modal__text">Оставьте заявку и наш менеджер свяжется с вами в течение 10 минут</div>
-            <form id="form-request" action="">
-              <input class="form-input" type="name">
-              <input class="form-input" type="rel">
-              <button class="btn btn--primary" type="submit">Получить консультацию</button>
-            </form>
-
-            <p class="modal__info">
-              Нажимая на кнопку вы соглашаетесь с <a href="#" target="_blank" rel="nofollow noreferer noopener">политикой конфиденциальности</a> и даете <a href="#" target="_blank" rel="nofollow noreferer noopener">согласие на обработку персональных данных</a>
-            </p>
-          </div>
+          <a href="#"
+             class="btn btn--secondary d-sm-none">
+            <svg width="8"
+                 height="8"
+                 aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-small-aroow-v2"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
   </div>
-  <script src="js/vendor-bundle.js"></script>
-  <script src="js/main.js" type="module"></script>
-</body>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__cont">
+        <div class="footer-bottom__logo">
+          <a href="/page-main.html">
+            <img src="/img/logo-footer.png"
+                 alt="">
+          </a>
+        </div>
+        <p class="footer-bottom__links">
+          Отправляя сообщение в мессенджеры, форму заявки, я подтверждаю, что даю конкретное, предметное, информированное, сознательное и однозначное <a href="">Согласие на обработку моих персональных данных</a>, и полностью ознакомился и согласен с <a href="">Политикой обработки персональных данных</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="scroll-top"
+     id="scroll-top">
+  <a class="scroll-top__link"
+     href="#site-top"
+     aria-label="Наверх страницы">
+    <svg width="10"
+         height="10"
+         aria-hidden="true">
+      <use xlink:href="img/sprite.svg#arrow-up"></use>
+    </svg>
+  </a>
+</div>
+<div class="hystmodal"
+     id="send-ok-modal"
+     aria-hidden="true">
+  <div class="hystmodal__wrap">
+    <div class="hystmodal__window"
+         role="dialog"
+         aria-modal="true">
+      <div class="modal">
+
+        <div class="modal__title">Спасибо за заявку!</div>
+<div class="modal__text">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
+<button class="btn"
+        data-hystclose>Хорошо</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="hystmodal"
+     id="form-request-modal"
+     aria-hidden="true">
+  <div class="hystmodal__wrap">
+    <div class="hystmodal__window"
+         role="dialog"
+         aria-modal="true">
+      <div class="modal">
+
+        <div class="modal__title title">оставьте заявку</div>
+<div class="modal__text">Оставьте заявку и наш менеджер свяжется с вами в течение 10 минут</div>
+<form id="form-request"
+      data-validate
+      novalidate="novalidate">
+  <input class="form-input"
+         type="name"
+         placeholder="Ваше имя"
+         name="Имя"
+         required
+         data-validate="name">
+  <input class="form-input"
+         type="tel"
+         name="Контактный телефон"
+         required
+         placeholder="7 (___) ___-__-__"
+         data-validate="phone">
+  <button class="btn btn--primary"
+          type="submit">Получить консультацию</button>
+</form>
+
+<p class="modal__info">
+  Нажимая на кнопку вы соглашаетесь с <a href="#"
+   target="_blank"
+   rel="nofollow noreferer noopener">политикой конфиденциальности</a> и даете <a href="#"
+   target="_blank"
+   rel="nofollow noreferer noopener">согласие на обработку персональных данных</a>
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+		</div>
+	<script src="js/vendor-bundle.js"></script>
+<script src="js/main.js" type="module"></script>
+	</body>
 
 </html>
+

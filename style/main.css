@@ -708,7 +708,7 @@ a {
   min-width: 360px;
   max-width: 618px;
   margin: 0 auto;
-  padding: 40px 10px 30px;
+  padding: 40px 25px 30px;
 
   color: #000000;
 
@@ -772,12 +772,20 @@ a {
 .modal form {
   display: grid;
   width: 100%;
-  max-width: 418px;
+  max-width: 330px;
+  margin: 0 auto;
   margin-bottom: 32px;
 
   row-gap: 16px;
 }
+@media (min-width: 992px) {
+  .modal form {
+    max-width: 418px;
+  }
+}
 .modal .form-input {
+  position: relative;
+
   width: 100%;
   min-height: 76px;
 }
@@ -790,6 +798,9 @@ a {
   margin: 0 auto;
 
   text-align: center;
+}
+.modal__info a {
+  color: #58a1f8;
 }
 
 .just-burger {
