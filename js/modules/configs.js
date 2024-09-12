@@ -55,13 +55,13 @@ const validateConfig = {
   justValidate: {
     errorFieldCssClass: 'is-invalid',
     errorLabelStyle: {
-      color: 'var(--error)',
+      color: 'var(--error-color)',
       marginTop: '6px',
       fontSize: '12px',
-      textAlign: 'left',
+      textAlign: 'center',
       position: 'absolute',
-      bottom: '-18px',
-      left: '15px',
+      bottom: '-16px',
+      width: '100%',
     },
     errorFormClass: 'shaked',
     errorTimeout: 1500,

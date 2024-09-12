@@ -65,13 +65,6 @@ img {
      object-fit: cover;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  select:focus,
-  textarea:focus,
-  input:focus {
-    font-size: 16px;
-  }
-}
 .visually-hidden:not(:focus):not(:active),
 input[type=radio].visually-hidden,
 input[type=checkbox].visually-hidden,
@@ -434,6 +427,10 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+.form-field {
+  position: relative;
+}
+
 .form-label {
   display: flex;
   flex-direction: column-reverse;
@@ -448,7 +445,7 @@ a {
   width: 100%;
   padding: 14px 24px;
 
-  font-size: 12px;
+  font-size: 16px;
   color: var(--black-color);
 
   background-color: #f4f6fb;
@@ -783,7 +780,7 @@ a {
   margin: 0 auto;
   margin-bottom: 32px;
 
-  row-gap: 16px;
+  row-gap: 22px;
 }
 @media (min-width: 992px) {
   .modal form {
@@ -1141,6 +1138,12 @@ a {
 .footer-middle__form {
   width: 100%;
   max-width: 340px;
+  margin-bottom: 16px;
+}
+@media (min-width: 992px) {
+  .footer-middle__form {
+    margin-bottom: 0;
+  }
 }
 .footer-middle__form form {
   position: relative;
@@ -1151,6 +1154,14 @@ a {
 .footer-middle__form input {
   height: 100%;
   margin-right: 10px;
+}
+.footer-middle__form .just-validate-error-label {
+  left: 50%;
+
+  width: 224px;
+
+  -webkit-transform: translate(-60%);
+          transform: translate(-60%);
 }
 .footer-middle__contact {
   display: flex;
