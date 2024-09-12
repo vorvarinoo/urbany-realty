@@ -65,6 +65,13 @@ img {
      object-fit: cover;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+  }
+}
 .visually-hidden:not(:focus):not(:active),
 input[type=radio].visually-hidden,
 input[type=checkbox].visually-hidden,
