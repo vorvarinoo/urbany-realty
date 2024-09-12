@@ -544,6 +544,8 @@ a {
   background-color: var(--white-color);
   border-radius: 100%;
   box-shadow: -4px 19px 31px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   cursor: pointer;
 
   -webkit-user-select: none;
@@ -574,6 +576,14 @@ a {
   --swiper-pagination-bullet-inactive-opacity: 0.5;
   --swiper-pagination-bullet-width: 12%;
   --swiper-pagination-color: var(--white-color);
+}
+
+.button-prev {
+  left: 0;
+}
+
+.button-next {
+  right: 0;
 }
 
 .logo a {
@@ -1529,6 +1539,11 @@ a {
 }
 .partners__slider {
   position: relative;
+}
+@media (min-width: 992px) {
+  .partners__slider .swiper {
+    margin: 0 35px;
+  }
 }
 .partners__slider .swiper-slide {
   position: relative;

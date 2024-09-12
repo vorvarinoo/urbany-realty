@@ -6,7 +6,7 @@ const sliderConfig = {
   },
 
   partners: {
-    slidesPerView: 1.7,
+    slidesPerView: 1.9,
     spaceBetween: 32,
     watchSlidesProgress: true,
     freeMode: true,
