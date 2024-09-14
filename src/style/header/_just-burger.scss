@@ -31,8 +31,10 @@
     width: 60%;
   }
 
-  &:hover > span:nth-child(2) {
-    width: 70%;
+  @media (any-hover: hover) {
+    &:hover > span:nth-child(2) {
+      width: 70%;
+    }
   }
 
   &.is-expanded span:nth-child(1) {

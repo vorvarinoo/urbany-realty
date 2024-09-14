@@ -1,5 +1,4 @@
-.language-select {
-  margin-right: 20px;
+.select {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -12,18 +11,29 @@
   color: #1e3551;
   cursor: pointer;
   user-select: none;
+  text-transform: uppercase;
+
+  &--filter {
+    text-transform: lowercase;
+    color: rgba(30, 30, 30, 0.5);
+    padding: 15px 30px;
+
+    @include media-min($lg) {
+      min-width: auto;
+    }
+  }
 }
 
-.language-select__current {
+.select__current {
   margin-right: 8px;
 }
 
-.language-select__arrow {
+.select__arrow {
   font-size: 12px;
   margin-left: auto;
 }
 
-.language-select__dropdown {
+.select__dropdown {
   position: absolute;
   top: 0;
   left: 0;

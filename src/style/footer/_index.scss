@@ -21,8 +21,6 @@
       flex-wrap: nowrap;
     }
   }
-
-
 }
 
 .footer-middle {
@@ -76,6 +74,11 @@
   &__form {
     max-width: 340px;
     width: 100%;
+    margin-bottom: 16px;
+
+    @include media-min($lg) {
+      margin-bottom: 0;
+    }
 
     & form {
       position: relative;
@@ -87,6 +90,12 @@
     & input {
       height: 100%;
       margin-right: 10px;
+    }
+
+    & .just-validate-error-label {
+      left: 50%;
+      transform: translate(-60%);
+      width: 224px;
     }
   }
 

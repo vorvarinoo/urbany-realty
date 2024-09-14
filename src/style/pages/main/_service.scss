@@ -4,11 +4,15 @@
   display: grid;
   row-gap: 16px;
 
-  &:hover {
-    & button {
-      color: #0a0a0a;
-      background-color: var(--white-color);
-      transform: rotate(-45deg);
+
+
+  @media (any-hover: hover) {
+    &:hover {
+      & button {
+        color: #0a0a0a;
+        background-color: var(--white-color);
+        transform: rotate(-45deg);
+      }
     }
   }
 
@@ -78,6 +82,10 @@
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
       transform 0.3s ease-in-out;
 
-
+    @include media-max($lg) {
+      color: #0a0a0a;
+      background-color: var(--white-color);
+      transform: rotate(-45deg);
+    }
   }
 }

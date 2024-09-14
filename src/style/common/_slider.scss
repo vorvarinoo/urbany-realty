@@ -20,7 +20,7 @@
   position: absolute;
   z-index: 1;
   top: 47%;
-
+  transform: translateY(-50%);
   background-color: var(--white-color);
   box-shadow: -4px 19px 31px 0 rgba(0, 0, 0, 0.15);
   border-radius: 100%;
@@ -44,4 +44,26 @@
   @include media-min ($xl) {
     transition: background-color 0.2s ease-in-out;
   }
+}
+
+
+.swiper-pagination {
+  --swiper-pagination-bullet-inactive-color: var(--white-color);
+  --swiper-pagination-bullet-inactive-opacity: .5;
+  --swiper-pagination-color: var(--white-color);
+  --swiper-pagination-bullet-width: 12%;
+  --swiper-pagination-bullet-height: 1px;
+
+  bottom: 24px !important;
+}
+
+
+.button-prev {
+  left: 0;
+
+}
+
+.button-next {
+  right: 0;
+
 }

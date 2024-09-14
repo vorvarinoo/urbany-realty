@@ -1,3 +1,7 @@
+.form-field {
+  position: relative;
+}
+
 .form-label {
   display: flex;
   flex-direction: column-reverse;
@@ -9,7 +13,7 @@
 }
 
 .form-input {
-  font-size: 12px;
+  font-size: 16px;
   padding: 14px 24px;
   width: 100%;
   color: var(--black-color);

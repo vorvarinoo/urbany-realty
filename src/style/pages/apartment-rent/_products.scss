@@ -1,0 +1,52 @@
+.products {
+  padding: 20px 0;
+
+  @include media-min($md) {
+    padding: 32px 0 20px;
+  }
+
+  &__list {
+    @include list-reset;
+
+    overflow-x: scroll;
+    display: flex;
+    margin-bottom: 36px;
+    scrollbar-width: none;
+
+    @include media-min ($lg) {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      column-gap: 28px;
+      row-gap: 54px;
+
+      margin-bottom: 48px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+      display: none;
+    }
+
+    & li {
+      max-width: 300px;
+      width: 100%;
+      margin-right: 24px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include media-min ($lg) {
+        max-width: 100%;
+        margin-right: 0;
+      }
+    }
+
+  }
+
+  & .btn--primary {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+}

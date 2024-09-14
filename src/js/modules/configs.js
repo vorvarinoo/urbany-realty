@@ -6,7 +6,7 @@ const sliderConfig = {
   },
 
   partners: {
-    slidesPerView: 1.7,
+    slidesPerView: 1.9,
     spaceBetween: 32,
     watchSlidesProgress: true,
     freeMode: true,
@@ -25,6 +25,16 @@ const sliderConfig = {
         slidesPerView: 5,
       },
     }
+  },
+
+  product: {
+    slidesPerView: 1,
+    lazy: true,
+    watchSlidesProgress: true,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
   },
 };
 
@@ -45,13 +55,13 @@ const validateConfig = {
   justValidate: {
     errorFieldCssClass: 'is-invalid',
     errorLabelStyle: {
-      color: 'var(--error)',
+      color: 'var(--error-color)',
       marginTop: '6px',
       fontSize: '12px',
-      textAlign: 'left',
+      textAlign: 'center',
       position: 'absolute',
-      bottom: '-18px',
-      left: '15px',
+      bottom: '-16px',
+      width: '100%',
     },
     errorFormClass: 'shaked',
     errorTimeout: 1500,

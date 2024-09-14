@@ -2,10 +2,12 @@
   padding: 54px 0 16px;
 
   @include media-min($lg) {
-    padding: 24px 32px;
+    padding: 24px 0 32px;
   }
 
   & .title {
+    text-transform: lowercase;
+
     @include media-min($lg) {
       margin-right: 30px;
     }
@@ -26,6 +28,7 @@
     @include indent-reset;
 
     max-width: 424px;
+    margin-top: 8px;
 
     @include media-min($lg) {
       margin-right: 40px;
