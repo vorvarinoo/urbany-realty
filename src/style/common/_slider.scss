@@ -54,7 +54,13 @@
   --swiper-pagination-bullet-width: 12%;
   --swiper-pagination-bullet-height: 1px;
 
-  bottom: 24px !important;
+  bottom: 0 !important;
+  position: static;
+  width: 100%;
+  height: 1px;
+  transform: translateY(-35px);
+  display: flex;
+  justify-content: center;
 }
 
 

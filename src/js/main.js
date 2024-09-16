@@ -15,6 +15,7 @@ import {
 } from "./modules/validate.js";
 
 import "./modules/select.js";
+import "./modules/radio.js";
 
 document.addEventListener( "DOMContentLoaded", () => {
   initSiteSettings();

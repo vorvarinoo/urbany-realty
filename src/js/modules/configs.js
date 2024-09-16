@@ -27,15 +27,7 @@ const sliderConfig = {
     }
   },
 
-  product: {
-    slidesPerView: 1,
-    lazy: true,
-    watchSlidesProgress: true,
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  },
+
 };
 
 const smoothScrollConfig = {
