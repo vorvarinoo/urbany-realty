@@ -16,6 +16,7 @@ import {
 
 import "./modules/select.js";
 import "./modules/radio.js";
+import "./modules/show-more.js";
 
 document.addEventListener( "DOMContentLoaded", () => {
   initSiteSettings();

@@ -73,6 +73,9 @@ input[type="file"].visually-hidden {
   }
 }
 
+.d-flex {
+  display: flex !important;
+}
 
 .d-lg-none {
   @include media-min($lg) {
